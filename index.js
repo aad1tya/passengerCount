@@ -18,8 +18,12 @@ function reset()
 
 function save()
 {
-    let countValue = countEl.innerText + " - ";
-    saveEl.textContent += countValue
-    console.log(countEl.innerText);
-    reset(); 
+    if (count > 0)
+    {
+        let countValue = countEl.innerText + " - ";
+        saveEl.textContent += countValue
+        console.log(countEl.innerText);
+        reset(); 
+    }
+
 }
